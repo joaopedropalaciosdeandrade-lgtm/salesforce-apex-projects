@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Contatos da Conta">
+        <template if:true={contatos}>
+            <template for:each={contatos} for:item="contact">
+                <p key={contact.Id}>
+                    {contact.Name} - {contact.Email}</p>
+            </template>
+        </template>
+    </lightning-card>
+</template>
