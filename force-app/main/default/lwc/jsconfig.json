@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "baseUrl": ".",
+        "ignoreDeprecations": "6.0",
+        "experimentalDecorators": true,
+        "paths": {
+            "c/*": [
+                "*"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "exclude": [
+        "**/node_modules/**"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}
